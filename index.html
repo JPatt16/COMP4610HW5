@@ -1,0 +1,50 @@
+<!--
+File: index.html
+GUI Assignment: One Line Scrabble Game
+Joshua Patterson, UMass Lowell Computer Science, joshua_patterson@student.uml.edu
+Copyright (c) 2025 by Joshua. All rights reserved.
+updated by JP on December 17, 2025 at 11:30PM 
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>One Line Scrabble Game</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="title">One Line Scrabble</div>
+      <div class="scores">
+        <div class="pill">Word Score: <span id="wordScore">0</span></div>
+        <div class="pill">Total Score: <span id="totalScore">0</span></div>
+      </div>
+      <div class="actions">
+        <button id="submitWord" class="btn" type="button">Play Word</button>
+        <button id="newTiles" class="btn" type="button">New Tiles</button>
+        <button id="restart" class="btn" type="button">Restart</button>
+      </div>
+    </header>
+
+    <section class="boardWrap">
+      <div id="board" class="board" aria-label="Scrabble board row"></div>
+    </section>
+
+    <section class="rackWrap">
+      <div class="rackTitle">Tile Rack</div>
+      <div id="rack" class="rack" aria-label="Tile rack"></div>
+    </section>
+
+    <section class="statusWrap">
+      <div id="status" class="status"></div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
